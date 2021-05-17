@@ -1,0 +1,25 @@
+.social-contact {
+  display: inline-flex;
+}
+
+.social-contact__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-contact__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  border: hidden;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-contact__link:hover,
+.social-contact__link:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
+}
